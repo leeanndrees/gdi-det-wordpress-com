@@ -55,7 +55,7 @@ body {
 .right {float: right;}
 
 .reveal .slides>section, .reveal .slides>section>section {
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 /*********************************************
@@ -78,7 +78,7 @@ body {
 
 .reveal section[data-background="#f05b62"] h2, .reveal section[data-background="#f05b62"] h1 {color: #fafafa;}
 .reveal h1 {margin: 0 0 30px;}
-
+.reveal p {margin-bottom: 20px;}
 /*********************************************
  * LINKS
  *********************************************/
