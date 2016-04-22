@@ -54,6 +54,10 @@ body {
 .left {float: left;}
 .right {float: right;}
 
+.reveal .slides>section, .reveal .slides>section>section {
+  margin-top: 7%;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
