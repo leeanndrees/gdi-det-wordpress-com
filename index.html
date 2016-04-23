@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>WordPress.com Basics || Girl Develop It Detroit</title>
+
+	<meta name="description" content="This is a Girl Develop It WordPress curriculum. Designed originally by Laura Eagin and Leeann Drees for GDI Detroit. The course is intended to be one overview session, lating 4 hours. I hope that you will build on this curriculum and turn it into an even more awesome class. Oh, and WordPress is awesome! Go Girl Developers!">
+
+	<meta name="author" content="Girl Develop It">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="reveal/css/reveal.css">
+	<link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
+ <!--  <link rel="stylesheet" href="reveal/css/theme/custom.css"> -->
+
+	<!-- For syntax highlighting -->
+	<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+	<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+
+	<!-- If use the PDF print sheet so students can print slides-->
+	
+	<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+      <section>
+        <h3>Set up your computer for today</h3>
+        <p><strong>Follow along with the slides:</strong> <br>
+          <a href="http://tinyurl.com/gdidetwp" target="_blank">tinyurl.com/GDIdetWPbasics</a>
+        </p>
+        <hr>
+        <p>Optional: download images to use on your site later (save to Desktop).</p>
+        <hr>
+          <p>Optional: We'll be using <strong>Google Chrome</strong> as our web browser, and recommend you use it to follow along.</p>
+      </section>
+
+    <!-- Begin Intro section -->
+    <section>
+      <section>
+        <h3>Welcome!</h3>
+        <div class = "left-align">
+        <img src="images/gdi_logo_badge.png" width="350" style="float:right; border:none; box-shadow: none;">
+        <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+        
+        <p class ="green">Some "rules"</p>
+        <ul>
+          <li>We are here for you!</li>
+          <li>Every question is important</li>
+          <li>Help each other</li>
+          <li>Have fun</li>
+        </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3>Join Our Slack Group!</h3>
+
+        <p>You can chat, ask questions, and keep up with fellow GDI members between classes.</p>
+
+        <p>Slack works with its own app, or in your web browser.</p>
+        <hr>
+
+        <p><a href="http://gdidetslack.stamplayapp.com/" target="_blank">Sign up!</a></p>
+
+        <hr>
+
+        <p>There's a channel called <span class="green">#introwordpress</span>, where you're welcome to post questions, links, etc. related to class today.</p>
+      </section>
+      
+        
+        <section>
+        <h3>Meet Your Instructor</h3>
+        <h4>Leeann Drees</h4>
+        <div class="left" style="font-size: 80%; line-height: 1.2em; width:60%;">
+          <ul>
+            <li class="fragment">It's my job to make WordPress sites with <a href="http://ellell.co">ellell &amp; co.</a>!</li>
+            <li class="fragment">I live here in Detroit with 3 very cute cats (also some people).</li>
+            <li class="fragment">When not coding, I'm into cooking, baking, and eating (so, food!), and reading all the things.</li>
+            <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/leeanndrees">@leeanndrees</a></li>
+            <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:leeann@girldevelopit.com">leeann@girldevelopit.com</a></li>
+          </ul>
+        </div>
+          <div class="right">
+        <img src="images/all3cats.jpg" style="max-width: 300px"/>
+      </div>
+      </section>
+
+      <section>
+        <h3>Let's meet the class!</h3>
+        <p>Tell us your name</p>
+        <hr>
+        <p>Have you used WordPress before?</p>
+        <hr>
+        <p>What was your first concert?</p>    
+      </section>
+    </section>
+    <!-- End Intro section -->
+      
+    <section>
+      <section data-markdown>
+       ##What is WordPress?
+
+       ![printing press](images/printing_press.png)
+      </section>
+      <section data-markdown>
+        **WordPress** is an open-source blogging platform and content management system created in 2003.
+
+        ![WordPress logo](images/wordpress-logo.png)
+      </section>
+      <section data-markdown>
+        ###Let's break that down...
+
+        WordPress is an **open-source** blogging platform and content management system created in 2003.
+        <br><br>
+        <div class="fragment">
+          <blockquote>software for which the original source code is made freely available and may be redistributed and modified.</blockquote>
+
+          <small>Definition from Google.</small>
+        </div>
+      </section>
+      <section data-markdown>
+        ###Let's break that down...
+
+        WordPress is an open-source **blogging platform** and content management system created in 2003.
+
+        <div class="fragment">
+          <blockquote><strong>blog</strong>: a regularly updated website or web page, typically one run by an individual or small group...</blockquote>
+
+          <blockquote><strong>platform</strong>: software or service that helps make a website into a functioning blog.</blockquote>
+          <small>Definitions from Google and <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&sqi=2&ved=0ahUKEwjAle-SnqHMAhWCtYMKHV7IArQQFggeMAE&url=http%3A%2F%2Fonlinebusiness.about.com%2Fod%2Fglossary%2Fg%2Fblogging-platform.htm&usg=AFQjCNFpfljhcM2cYfb_wX8-dcEYKc4zaw&sig2=NP3EMf5U1xxD67ZhQYWn6w&bvm=bv.119745492,d.amc">About.com</a>.</small>
+        </div>
+      </section>
+
+      <section data-markdown>
+        ###Let's break that down...
+
+        WordPress is an open-source blogging platform and **content management system** created in 2003.
+
+        <div class="fragment">
+          <blockquote>A content management system, or CMS, is a web application designed to make it easy for non-technical users to add [to], edit and manage a website.</blockquote>
+          <small>Definition from <a href="https://plone.org/documentation/faq/what-is-a-cms">Plone</a>, apparently a CMS itself!</small>
+        </div>
+      </section>
+
+      <section data-markdown>
+        ###Let's break that down...
+
+        WordPress is an open-source blogging platform and content management system **created in 2003**.
+
+        <div class="fragment">
+          <hr>
+          This is OLDER THAN DIRT, in internet years. Before Facebook (2004), YouTube (2005), or Twitter (2006).
+        </div>
+
+        <div class="fragment">
+          <hr>
+          Fortunately it's evolved a lot since its first incarnation. :)
+        </div>
+      </section>
+
+      <section data-markdown>
+        ###All that to say...
+
+        WordPress is a tool that lets you get your content &amp; ideas published on the web, fast, with a minimal budget – or no budget at all.
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Let's Try It!
+
+        Navigate to [wordpress.com](http://wordpress.com).
+
+        Click the big blue "Create Website" button.
+
+        ![create website button](images/createwebsite.png)
+      </section>
+      <section data-markdown>
+        ###Steps:
+
+        1. Pick a topic
+        2. Pick a theme
+        3. Pick a domain
+        4. Pick a plan
+        5. Create your account
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Welcome to WordPress.com!
+
+        Let's get settled in &amp; take a look at our settings.
+      </section>
+      <section data-markdown>
+        ###Settings
+
+        We're starting at the bottom (cue Drake).
+
+        ![Settings menu item](images/settings.png)
+      </section>
+      <section data-markdown>
+        ###Settings &gt; General
+
+        - Change your title
+        - Choose your tagline
+          - a good one will include keywords and help your search engine rankings!
+        - Check your timezone
+      </section>
+      <section data-markdown>
+        ###Settings &gt; Writing
+
+        - Set your default category
+          - you'll only have "Uncategorized" for now, but you can choose others later!
+        - Set your default post format
+      </section>
+      <section data-markdown>
+        ###Settings &gt; Discussion
+
+        - Choose whether and how people can comment on your writing
+        - You can moderate comments as strictly as you wish
+      </section>
+      <section data-markdown>
+        ###Settings &gt; Google Analytics
+
+        - Only for premium plans!
+        - Google Analytics helps you track your site's visitors
+      </section>
+      <section data-markdown>
+        ###Settings &gt; Import
+
+        Adding content you've published elsewhere is no problem!
+
+        (Yes, even if it's not WordPress. Click "Other Importers" and see.)
+      </section>
+      <section data-markdown>
+        ###Other "Configure" Stuff
+
+        Let's take a quick look at:
+
+        - Sharing
+        - People
+        - Domains
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Let's Write Our First Post!
+
+        ![add a post](images/add_post.png)
+      </section>
+      <section data-markdown>
+        ####Give your post:
+
+        - A title
+        - A few paragraphs of content 
+
+      </section>
+      <section data-markdown>
+        ####Let's add:
+
+        - An image
+        - A link
+        - Some **bold** &amp; _italicized_ text
+        - Some headings
+      </section>
+      <section data-markdown>
+        Your editor has two modes: visual &amp; HTML
+
+        ![visual vs html](images/editortoggle.png)
+
+        **Visual editor**: what you see is (mostly) what you get.
+
+        **HTML editor**: makes code nerds happy!
+      </section>
+      <section data-markdown>
+        I don't recommend using the post editor to change your text color, even though you can.
+
+        Any guesses as to why not?
+      </section>
+      <section data-markdown>
+        How can I change the date &amp; time of my post's publication?
+
+        (WordPress is a little bit like a time machine!)
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Before We Publish: Post Options
+
+        ![post options](images/post_options.png)
+      </section>
+      <section data-markdown>
+        ###Categories &amp; Tags
+
+        Categories &amp; Tags help you sort your blog's content.
+
+        **Categories** are for higher level sorting. 
+
+        - Use 1 or 2 per post
+        - Have few total categories for your site
+        - Categories are usually capitalized, though it's a matter of preference
+        - Think of them like chapters in a book's table of contents
+      </section>
+      <section data-markdown>
+        ###Categories &amp; Tags
+        **Tags** can help link all related posts to each other.
+        
+        - Use as many as you need per post
+        - Tags are often lowercased, though again it's up to you!
+        - Think of them like index entries 
+      </section>
+      <section data-markdown>
+       ###Categories &amp; Tags
+
+       An example:
+
+       - **Post title**: Chocolate Chip &amp; Coconut Cookies
+       - **Categories**: Dessert, Recipes
+       - **Tags**: chocolate, coconut, cookies, holiday favorites
+      </section>
+      <section data-markdown>
+        ###Featured Image
+
+        <blockquote>A featured image represent the contents, mood, or theme of a post or page.  Posts and pages can have a single featured image, which many themes and tools can use to enhance the presentation of your site.</blockquote>
+        <small>From <a href="https://en.support.wordpress.com/featured-images/">WordPress Support</a></small>
+      </section>
+      <section data-markdown>
+        ###Sharing
+
+        ...is caring
+
+        ![guinea pigs sharing](images/guineapigs.jpg)
+      </section>
+      <section data-markdown>
+        ###Post Format
+
+        Your theme may or may not display content differently based on this choice.
+
+        [Guide to WordPress post formats.](https://en.support.wordpress.com/posts/post-formats/)
+      </section>
+      <section data-markdown>
+        ###More Options &gt; Slug
+
+        <ul>
+          <li>The URL fragment that will refer to this post</li>
+          <li>Example: myfoodblog.wordpress.com/<span class="pink">chocolate-chip-coconut-cookies</span></li>
+          <li>WordPress generates one and usually it's fine, but you may want to make it shorter or more relevant</li>
+          <li>No capitalization or spaces – use hyphens instead</li>
+          <li>Use keywords here to help your SEO!</li>
+        </ul>
+      </section>
+      <section data-markdown>
+        ###More Options &gt; Excerpt
+
+        - Some themes may display an excerpt on your home page
+        - WordPress usually generates one, but you can set a custom one here
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        ##Ok can we publish now?
+
+        - Preview first!
+        - Then go for it :)
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        ##Let's Add a Page
+
+        Spoiler alert: It's almost exactly like adding a post!
+      </section>
+      <section data-markdown>
+        ###Page Hierarchy
+
+        Pages can be hierarchical, if you set a "Parent Page."
+
+        Think of your site like an outline:
+
+        - Home
+        - About
+          - Our Team
+          - Our History
+        - Contact
+
+        "About" is the _parent page_ to "Our Team" and "Our History."
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        ##Posts vs. Pages
+      </section>
+      <section data-markdown>
+        **Pages** are best for static, timeless material you want your users to always be able to find easily. They can serve as a backbone for your site.
+        <small>Examples: About, Contact, Location, Mission</small>
+
+        **Posts** are best for time-sensitive updates and creating conversation. If you're running a blog, most of your content will be in the form of posts! 
+        <small>Examples: This Month's Workshops, Springtime Recipes, We're in the Newspaper</small>
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Menus
+
+        How do we get to all those pages?
+
+        ![menus](images/menus.png)
+      </section>
+      <section data-markdown>
+        ###Menus
+        - Your theme controls how many menu areas you have
+        - Common menu areas:
+          - header
+          - sidebar
+          - footer
+        - Social links menus will convert your Twitter, Facebook, etc. links into nifty icons!
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##Themes
+
+        ![themes](images/themes.png)
+      </section>
+      <section data-markdown>
+        ###What is a theme?
+
+        - Themes control the appearance of your site, but they don't alter the content at all
+        - Try changing your theme and see what happens!
+        - Click "Try and Customize" to make sure you like it first.
+      </section>
+      <section data-markdown>
+        ###Choosing the Best Theme
+
+        - There are tons out there and it can be overwhelming!
+        - What kind of content are you planning to show? Does this theme have all the areas you need to display images, text, sidebars, etc.?
+        - Is it responsive?
+        - Is it fast?
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##WordPress.com vs. WordPress.org
+
+        Yes, they're different things!
+      </section>
+      <section data-markdown>
+        We've been using WordPress.com to create a blog that is hosted and managed by WordPress.com.
+
+        ------
+
+        Another option is to purchase your own hosting and install the WordPress software (available from _wordpress.org_) on a site you own and manage. 
+
+        These sites are called **self-hosted WordPress sites**.
+      </section>
+      <section data-markdown>
+        ###Which one is best for you?
+
+        It depends what you want to do!
+
+        In short, WordPress.com is easier but gives you less control. With a self-hosted site, you have more power and more responsibility.
+      </section>
+      <section data-markdown>
+        ###Which one is best for you?
+
+        WordPress.com is like renting an apartment; self-hosted sites are like buying a house.
+
+        Let's look at [this comparison from Skillcrush](http://skillcrush.com/2014/06/05/wordpress-com-vs-wordpress-org/).
+
+        <small>(If you're curious about self-hosted sites, look out for our **Intro to WordPress** workshop.)</small>
+      </section>
+      <section data-markdown>
+        ###Good news: you can always move!
+
+        Remember the handy import/export tool? It'll help you move your content from WordPress.com to a self-hosted site, or vice versa, if your needs change!
+      </section>
+    </section>
+
+    <section>
+      <section data-markdown>
+        ##What Now?
+
+        You're a blogger, baby!
+
+        ![congratulations cat](images/congratulationscat.jpg)
+      </section>
+      <section data-markdown>
+        ###What Now?
+
+        - Keep it up!
+        - Keep learning!
+        - If you get stuck: 
+          - Google it
+          - Ask our Slack team
+          - Ask on Twitter with #WordPress
+        - Get involved in the WordPress community
+          - [Metro Detroit WordPress Meetup](http://www.meetup.com/metro-detroit-wordpress-meetup/)
+      </section>
+    </section>
+
+
+    <!-- Upcoming GDI Events -->
+    <section>
+      <h3>Upcoming Girl Develop It - Detroit Events!</h3>
+      <ul>
+        <li><strong>
+        	<span class="green">Tomorrow:</span></strong> Code &amp; Tea</li>
+        <li><strong>
+        	<span class="green">5/3:</span></strong> <a href="https://www.eventbrite.com/e/code-debugging-the-gender-gap-women-in-tech-panel-tickets-24263532880?utm_content=buffer6b4a6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer">Film Screening</a>: <em>Code: Debugging the Gender Gap</em> </li>
+        <li><strong>
+        	<span class="green">5/14 &amp; 5/15:</span></strong> Intro to Git &amp; Github</li>
+      </ul><br/><br/>
+      <p>Watch <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">our Meetup group</a> for more great events!</p>
+      <br>
+      <p>Be sure to follow GDI on Twitter (<a href="https://twitter.com/gdidet">@GDIdet</a>) and <a href="https://www.facebook.com/GirlDevelopItDetroit">Facebook</a> for all the latest classes, events, and ways to get involved!</p>
+    </section>
+
+     <!-- Question-->
+      <section>
+        <h3>Questions?</h3>
+        <p>We're here to help!</p>
+        <img src="images/questions_cat.jpg" alt="Confused? Let us help!" />
+        <p>
+        	<a href="mailto:leeann@girldevelopit.com">leeann@girldevelopit.com</a> Twitter: <a href="http://twitter.com/leeanndrees" target="_blank">@leeanndrees</a><br/>
+        	<a href="mailto:detroit@girldevelopit.com">detroit@girldevelopit.com</a> Twitter: <a href="http://twitter.com/gdiDet" target="_blank">@gdiDet</a><br/>  
+        </p>
+      </section>
+		</div>
+		<footer>
+      <div class="copyright">
+        Intro to WordPress | Girl Develop It Detroit |
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+	</div>
+	<script src="reveal/lib/js/head.min.js"></script>
+	<script src="reveal/js/reveal.min.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+</body>
+</html>
