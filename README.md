@@ -1,7 +1,7 @@
 WordPress.com Basics
 ======================
 
-Girl Develop It Detroit WordPress.com Basics curriculum. 
+Girl Develop It Detroit WordPress.com Basics curriculum. [View the slides online.](http://tinyurl.com/GDIdetWPbasics)
 
 This is a Girl Develop It WordPress curriculum, originally created by [Leeann Drees](http://leeanndrees.com) for the Detroit chapter of Girl Develop It.
 
