@@ -123,33 +123,33 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
+.reveal .controls div.left,
+.reveal .controls div.left.enabled {
   border-right-color:  #f05b62; }
 
 
-.reveal .controls div.navigate-right,
-.reveal .controls div.navigate-right.enabled {
+.reveal .controls div.right,
+.reveal .controls div.right.enabled {
   border-left-color:  #f05b62; }
 
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled {
+.reveal .controls div.up,
+.reveal .controls div.up.enabled {
   border-bottom-color:  #f05b62; }
 
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
+.reveal .controls div.down,
+.reveal .controls div.down.enabled {
   border-top-color:  #f05b62; }
 
-.reveal .controls div.navigate-left.enabled:hover {
+.reveal .controls div.left.enabled:hover {
   border-right-color: #53555C; }
 
-.reveal .controls div.navigate-right.enabled:hover {
+.reveal .controls div.right.enabled:hover {
   border-left-color: #53555C }
 
-.reveal .controls div.navigate-up.enabled:hover {
+.reveal .controls div.up.enabled:hover {
   border-bottom-color: #53555C; }
 
-.reveal .controls div.navigate-down.enabled:hover {
+.reveal .controls div.down.enabled:hover {
   border-top-color: #53555C; }
 
 /*********************************************
